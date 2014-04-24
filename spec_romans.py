@@ -14,6 +14,8 @@ class TestRomans(unittest.TestCase):
 		self.assertEqual(self.romans.convert(2), 'II')
 		self.assertEqual(self.romans.convert(5), 'V')
 		self.assertEqual(self.romans.convert(6), 'VI')
+		self.assertEqual(self.romans.convert(10), 'X')
+		self.assertEqual(self.romans.convert(11), 'XI')
 
 if __name__ == '__main__':
 	unittest.main()
