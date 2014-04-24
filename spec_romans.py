@@ -24,6 +24,7 @@ class TestRomans(unittest.TestCase):
 		self.assertEqual(self.romans.convert(100), 'C')
 		self.assertEqual(self.romans.convert(500), 'D')
 		self.assertEqual(self.romans.convert(1000), 'M')
+		self.assertEqual(self.romans.convert(2014), 'MMXIV')
 
 if __name__ == '__main__':
 	unittest.main()
