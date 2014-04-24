@@ -5,10 +5,10 @@ class Romans:
 
 	def convert(self, decimal):
 		answer = ""
-		if decimal >= 10:
+		while decimal >= 10:
 			answer += 'X'
 			decimal -= 10
-		if decimal >= 5:
+		while decimal >= 5:
 			answer += 'V'
 			decimal -= 5
 		answer += ('I' * decimal)
