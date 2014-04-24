@@ -5,6 +5,7 @@ class Romans:
 
 	def __init__(self):
 		self.conversions = [
+			[50, 'L' ],
 			[10, 'X' ],
 			[ 9, 'IX'],
 			[ 5, 'V' ],
