@@ -3,21 +3,19 @@
 
 class Romans:
 
+	def __init__(self):
+		self.conversions = [
+			[10, 'X' ],
+			[ 9, 'IX'],
+			[ 5, 'V' ],
+			[ 4, 'IV'],
+			[ 1, 'I' ]
+		]
+
 	def convert(self, decimal):
 		answer = ""
-		while decimal >= 10:
-			answer += 'X'
-			decimal -= 10
-		while decimal >= 9:
-			answer += 'IX'
-			decimal -= 9
-		while decimal >= 5:
-			answer += 'V'
-			decimal -= 5
-		while decimal >= 4:
-			answer += 'IV'
-			decimal -= 4
-		while decimal >= 1:
-			answer += 'I'
-			decimal -= 1
+		for conversion in self.conversions:
+			while decimal >= conversion[0]:
+				answer += conversion[1]
+				decimal -= conversion[0]
 		return answer
