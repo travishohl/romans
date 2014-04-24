@@ -8,6 +8,9 @@ class Romans:
 		while decimal >= 10:
 			answer += 'X'
 			decimal -= 10
+		while decimal >= 9:
+			answer += 'IX'
+			decimal -= 9
 		while decimal >= 5:
 			answer += 'V'
 			decimal -= 5

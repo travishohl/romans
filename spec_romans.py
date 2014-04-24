@@ -15,6 +15,7 @@ class TestRomans(unittest.TestCase):
 		self.assertEqual(self.romans.convert(4), 'IV')
 		self.assertEqual(self.romans.convert(5), 'V')
 		self.assertEqual(self.romans.convert(6), 'VI')
+		self.assertEqual(self.romans.convert(9), 'IX')
 		self.assertEqual(self.romans.convert(10), 'X')
 		self.assertEqual(self.romans.convert(11), 'XI')
 		self.assertEqual(self.romans.convert(15), 'XV')
