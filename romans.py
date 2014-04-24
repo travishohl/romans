@@ -1,3 +1,7 @@
-# A program that converts decimal numbers to roman numerals
+# romans.py
+# A simple program that converts decimal to roman numeral
 
 class Romans:
+
+	def convert(self, decimal):
+		return 'I'
