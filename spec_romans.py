@@ -13,6 +13,7 @@ class TestRomans(unittest.TestCase):
 		self.assertEqual(self.romans.convert(1), 'I')
 		self.assertEqual(self.romans.convert(2), 'II')
 		self.assertEqual(self.romans.convert(5), 'V')
+		self.assertEqual(self.romans.convert(6), 'VI')
 
 if __name__ == '__main__':
 	unittest.main()

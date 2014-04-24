@@ -4,6 +4,9 @@
 class Romans:
 
 	def convert(self, decimal):
+		answer = ""
 		if decimal >= 5:
-			return 'V'
-		return 'I' * decimal
+			answer += 'V'
+			decimal -= 5
+		answer += ('I' * decimal)
+		return answer
