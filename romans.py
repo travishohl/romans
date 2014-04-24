@@ -4,4 +4,4 @@
 class Romans:
 
 	def convert(self, decimal):
-		return 'I'
+		return 'I' * decimal

@@ -11,6 +11,7 @@ class TestRomans(unittest.TestCase):
 
 	def test_convert(self):
 		self.assertEqual(self.romans.convert(1), 'I')
+		self.assertEqual(self.romans.convert(2), 'II')
 
 if __name__ == '__main__':
 	unittest.main()
