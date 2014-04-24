@@ -11,5 +11,8 @@ class Romans:
 		while decimal >= 5:
 			answer += 'V'
 			decimal -= 5
+		while decimal >= 4:
+			answer += 'IV'
+			decimal -= 4
 		answer += ('I' * decimal)
 		return answer
